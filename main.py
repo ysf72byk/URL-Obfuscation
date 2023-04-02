@@ -26,7 +26,7 @@ def button_click():
         r=requests.get(input_url)
         aa = obfuscate(input_url)
         result_text.delete(1.0, tk.END)
-        result_text.insert(tk.END, aa+"Warezim")
+        result_text.insert(tk.END, aa)
     except Exception:
         result_text.delete(1.0, tk.END)
         result_text.insert(tk.END, 'URL adresi geçersiz')
